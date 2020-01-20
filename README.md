@@ -13,14 +13,20 @@ Users of this template will need to download the provider (terraform-provider-vm
 
 We're going to walk through each item to make it easy for folks to use this provider.
 
+# The following command initiates the 'terraform-provider-vmc'. The only data required is the refresh token. This one can be obtained by going to your VMC account. Click on your username and then 'My Tokens' and generate a token.
+
 `provider "vmc" {
   refresh_token = ""
 }`
 
+# Note the token can added as a variable or manually input in the main.tf file.
+# Likewise, you need to input the Org ID. The Org ID can be found on your VMC Console. 
 
 `data "vmc_org" "my_org" {
   id = ""
 }`
+
+# VMC Connected Accounts : this is the list of AWS accounts that have previously been connected to your VMC Org. Remember: in VMC on AWS, we need an AWS account to link up.
 
 `data "vmc_connected_accounts" "my_accounts" {
   org_id = data.vmc_org.my_org.id
