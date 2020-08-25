@@ -20,7 +20,7 @@ resource "vmc_sddc" "sddc_1" {
   org_id = data.vmc_org.my_org.id
 
   # storage_capacity    = 100
-  sddc_name           = "my_SDDC_name"
+  sddc_name           = "my_SDDC_name_testing_gitHub"
   vpc_cidr            = "10.2.0.0/16"
   num_host            = 1
   provider_type       = "AWS"
