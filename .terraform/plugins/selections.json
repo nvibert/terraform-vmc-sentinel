@@ -1,1 +1,6 @@
-{}
+{
+  "registry.terraform.io/terraform-providers/vmc": {
+    "hash": "h1:EJyhCdTuTd9yr5nK75nEmuQ8wSt9sfcRyXFqzaE7oB4=",
+    "version": "1.3.0"
+  }
+}
