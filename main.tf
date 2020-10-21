@@ -27,7 +27,7 @@ resource "vmc_sddc" "sddc_1" {
   skip_creating_vxlan = true
   sso_domain          = "vmc.local"
   host_instance_type  = "I3_METAL"
-  sddc_type           = ""
+  # sddc_type           = ""
   # sddc_template_id = ""
   deployment_type = "SingleAZ"
   timeouts {
