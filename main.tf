@@ -22,7 +22,7 @@ resource "vmc_sddc" "sddc_1" {
     }
   sddc_name           = "my_SDDC"
   vpc_cidr            = var.sddc_mgmt_subnet
-  num_host            = 4
+  num_host            = 3
   provider_type       = "ZEROCLOUD"
   region              = data.vmc_customer_subnets.my_subnets.region
   vxlan_subnet        = var.sddc_default
