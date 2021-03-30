@@ -20,9 +20,9 @@ resource "vmc_sddc" "sddc_1" {
   lifecycle {
         ignore_changes = [edrs_policy_type, enable_edrs, max_hosts, min_hosts]
     }
-  sddc_name           = "OCTO_Rocks_Terraform"
+  sddc_name           = "Terraform Rocks"
   vpc_cidr            = var.sddc_mgmt_subnet
-  num_host            = 1
+  num_host            = 3
   provider_type       = "ZEROCLOUD"
   region              = data.vmc_customer_subnets.my_subnets.region
   vxlan_subnet        = var.sddc_default
