@@ -20,7 +20,7 @@ resource "vmc_sddc" "sddc_1" {
   lifecycle {
         ignore_changes = [edrs_policy_type, enable_edrs, max_hosts, min_hosts]
     }
-  sddc_name           = "AIG"
+  sddc_name           = "AIG-SDDC"
   vpc_cidr            = var.sddc_mgmt_subnet
   num_host            = 3
   provider_type       = "ZEROCLOUD"
